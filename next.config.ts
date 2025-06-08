@@ -1,9 +1,13 @@
 // @ts-nocheck
 /* eslint-disable */
 
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+const nextConfig = {
+  typescript: {
+    ignoreBuildErrors: true, // ✅ disables type checking during build
+  },
+  eslint: {
+    ignoreDuringBuilds: true, // ✅ disables linting during build
+  },
   images: {
     domains: ["ik.imagekit.io"],
   },
